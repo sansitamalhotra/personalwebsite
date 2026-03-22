@@ -7,6 +7,29 @@ import { useState } from 'react';
 import ProjectModal from './ProjectModal';
 
 const allProjects = [
+   
+  {
+    title: "PulseStock",
+    description: "Real-time Stock Sentiment Analysis • Live Data Pipeline",
+    longDescription: "PulseStock aggregates Reddit discussions and financial news to surface retail investor sentiment before it hits mainstream media. Built with a FastAPI backend processing live data from Reddit API and Finnhub, sentiment analysis using FinBERT, and AI-generated market briefs via Claude API. Features real-time updates, PostgreSQL + pgvector for efficient similarity search, and Next.js frontend with interactive sentiment visualization.",
+    tech: ["Next.js", "FastAPI", "PostgreSQL", "pgvector", "FinBERT", "Claude API", "PRAW", "Finnhub"],
+    plays: "NEW",
+    duration: "Live",
+    color: "#00ff88",
+    cover: "/images/pulsestock-cover.png",
+    github: "https://github.com/sansitamalhotra/pulsestock",
+    achievements: [
+      "Real-time sentiment analysis across 500+ stock tickers",
+      "AI-generated market briefs using Claude API",
+      "Live data pipeline from Reddit + financial news APIs",
+      "Sub-30s data refresh cycles with background processing"
+    ],
+    screenshots: [
+      "/screenshots-pulsestock/hero.png",
+      "/screenshots-pulsestock/fullresults.png",
+      "/screenshots-pulsestock/closeup.png"
+    ],
+  },
   {
     title: "GigIT",
     description: "KYC Verification Platform • NewHacks Winner",
@@ -240,6 +263,7 @@ export default function SpotifyHome({ onSectionChange }: SpotifyHomeProps) {
           </h2>
           <div className="space-y-2">
             {[
+              { name: 'PulseStock', detail: 'Real-time Stock Sentiment Analysis • Live Data', plays: 'NEW' },
               { name: 'GigIT', detail: 'KYC Verification Platform • NewHacks Winner', plays: '85K' },
               { name: 'SafetyNet HER', detail: 'AI Crisis Response System • DeltaHacks 12', plays: '42K' },
               { name: 'Schema Sync', detail: 'AI Data Integration • 92% Accuracy', plays: '38K' },
