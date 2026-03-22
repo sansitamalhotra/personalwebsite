@@ -18,6 +18,7 @@ const allProjects = [
     color: "#00ff88",
     cover: "/images/pulsestock-cover.png",
     github: "https://github.com/sansitamalhotra/pulsestock",
+    demo: "https://pulsestock.vercel.app",
     achievements: [
       "Real-time sentiment analysis across 500+ stock tickers",
       "AI-generated market briefs using Claude API",
