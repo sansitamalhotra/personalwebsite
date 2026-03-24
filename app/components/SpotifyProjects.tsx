@@ -9,26 +9,29 @@ import ProjectModal from './ProjectModal';
 
 const projects = [
    {
-    title: "PulseStock",
-    description: "Real-time stock sentiment analysis aggregating Reddit and financial news.",
-    longDescription: "PulseStock aggregates Reddit discussions and financial news to surface retail investor sentiment before it hits mainstream media. Built with a FastAPI backend processing live data from Reddit API and Finnhub, sentiment analysis using FinBERT, and AI-generated market briefs via Claude API. Features real-time updates, PostgreSQL + pgvector for efficient similarity search, and Next.js frontend with interactive sentiment visualization.",
-    tech: ["Next.js", "FastAPI", "PostgreSQL", "pgvector", "FinBERT", "Claude API", "PRAW", "Finnhub"],
-    plays: "NEW",
-    duration: "Live",
-    color: "#00ff88",
-    cover: "/images/pulsestock-cover.png",
-    github: "https://github.com/sansitamalhotra/pulsestock",
-    demo: "https://pulsestock.vercel.app/",
-    achievements: [
-      "Real-time sentiment analysis across 500+ stock tickers",
-      "AI-generated market briefs using Claude API",
-      "Live data pipeline from Reddit + financial news APIs",
-      "Sub-30s data refresh cycles with background processing"
-    ],
+  title: "PulseStock",
+  description: "Real-Time Stock Sentiment Terminal • AI Agent + Live Data",
+  longDescription: "PulseStock aggregates live financial news to surface market sentiment before it moves. FastAPI backend pulls headlines from NewsAPI, scores them with a custom NLP pipeline, and generates analyst-style briefs via GPT-4o-mini. Features a LangChain ReAct agent with persistent memory that compares tickers, answers follow-up questions, and calls live tools — plus shareable URLs, a persistent watchlist, and a Bloomberg-style terminal UI.",
+  tech: ["Next.js", "FastAPI", "LangChain", "LangGraph", "OpenAI", "NewsAPI", "yfinance", "Framer Motion"],
+  plays: "NEW",
+  duration: "Live",
+  color: "#00ff88",
+  cover: "/images/pulsestock-cover.png",
+  github: "https://github.com/sansitamalhotra/pulsestock",
+  demo: "https://pulsestock.vercel.app",
+  achievements: [
+    "LangChain ReAct agent with tool calling and persistent session memory",
+    "Real-time sentiment scoring across 500+ tickers via live news ingestion",
+    "AI analyst briefs synthesized from live headlines using GPT-4o-mini",
+    "Shareable ticker URLs, persistent watchlist, and scan history",
+  ],
     screenshots: [
-      "/screenshots-pulsestock/hero.png",
-      "/screenshots-pulsestock/fullresults.png",
-      "/screenshots-pulsestock/closeup.png"
+      "/screenshots-pulsestock/landing.png",
+      "/screenshots-pulsestock/aapl.png",
+      "/screenshots-pulsestock/nvda.png",
+      "/screenshots-pulsestock/ai.png",
+      "/screenshots-pulsestock/watchlist.png",
+      "/screenshots-pulsestock/ticker.png"
     ],
   },
   {
